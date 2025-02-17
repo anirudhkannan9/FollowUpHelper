@@ -1,5 +1,5 @@
 Roadmap:
-- Filtering display of saved/added people.  Filters: "All" "LinkedIn" etc.
+- Filtering display of saved/added people. Two rows of filters. Row 1 has to do with status: "Sent/Waiting," "Active". Row 2 has to do with platforms: "All" "LinkedIn" etc.
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
 - Add a Loom about how to use this Chrome Extension to this README file. Order of Loom: Use case / why & how I use this (30-60s), then installation instructions.
