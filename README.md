@@ -1,11 +1,11 @@
 Roadmap:
+- Saved JSONs are saved with some keyword e.g. followuphelper backup so that it's easy for you to find
 - Next to the text field for URL for manual input, button to "Add URL of current page"
 - Filtering display of saved/added people.  Filters: "All" "LinkedIn" etc.
-- Save in something besides Chrome Local Storage so that it actually persists when I delete and re-load the extension to test it. Maybe need to enable username & password?
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
 - Add a Loom about how to use this Chrome Extension to this README file. Order of Loom: Use case / why & how I use this (30-60s), then installation instructions.
-- Saved JSONs are saved with some keyword e.g. followuphelper backup so that it's easy for you to find
+
 
 Distant roadmap:
 - Instead of saving data to JSON (and reloading data from JSON), some kind of account management functionality?
