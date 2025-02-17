@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     const { connections = [] } = await chrome.storage.local.get('connections');
     
     // Add new connection
-    connections.push({
+    connections.unshift({
       ...pendingConnection,
       note,
-      timestamp
+      timestamp,
+      isManual: false
     });
     
     // Save to chrome.storage.local
