@@ -3,6 +3,7 @@ Roadmap:
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
 - Add a Loom about how to use this Chrome Extension to this README file. Order of Loom: Use case / why & how I use this (30-60s), then installation instructions.
+- Google Form or something for people to submit suggestions / bugs 
 
 
 Distant roadmap:
