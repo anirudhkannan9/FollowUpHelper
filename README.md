@@ -10,4 +10,9 @@ Roadmap:
 Distant roadmap:
 - Instead of saving data to JSON (and reloading data from JSON), some kind of account management functionality?
 - Reminders: "it's been x days/weeks since you added X. Do you want to follow up with them?"
-- Email follow-up support. Every time you send an email, you can activate the extension and it will note the email you sent from, the recipient address, the date & time, and the subject line. It can remind you to follow-up if they haven't replied (this could be more complicated though -- it might need them to 
+- Email follow-up support. Every time you send an email, you can activate the extension and it will note the email you sent from, the recipient address, the date & time, and the subject line. It can remind you to follow-up if they haven't replied (this could be more complicated though -- it might need them to
+
+Changelog/added functionality (not exhaustive):
+- Dialog automatically pops up upon LinkedIn connection request being sent.
+- Manual adding of URLs for people who you want to save / follow-up with
+- Backup & restoration of data via JSON.
