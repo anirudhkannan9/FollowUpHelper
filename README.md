@@ -1,5 +1,4 @@
 Roadmap:
-- Saved JSONs are saved with some keyword e.g. followuphelper backup so that it's easy for you to find
 - Next to the text field for URL for manual input, button to "Add URL of current page"
 - Filtering display of saved/added people.  Filters: "All" "LinkedIn" etc.
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
@@ -16,3 +15,4 @@ Changelog/added functionality (not exhaustive):
 - Dialog automatically pops up upon LinkedIn connection request being sent.
 - Manual adding of URLs for people who you want to save / follow-up with
 - Backup & restoration of data via JSON.
+- Saved JSONs are saved with some keyword e.g. followuphelper backup so that it's easy for you to find
