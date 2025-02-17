@@ -9,6 +9,23 @@
       padding: 10px;
       font-family: Arial, sans-serif;
     }
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .controls button {
+      padding: 8px 16px;
+      background: #0077b5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      flex: 1;
+    }
+    .controls button:hover {
+      background: #005582;
+    }
     .add-connection {
       margin-bottom: 15px;
       padding: 10px;
@@ -46,6 +63,10 @@
   </style>
 </head>
 <body>
+  <div class="controls">
+    <button id="backupBtn">Backup Data</button>
+    <button id="restoreBtn">Restore Data</button>
+  </div>
   <div class="add-connection">
     <input type="url" id="urlInput" placeholder="Enter URL">
     <textarea id="reasonInput" placeholder="Why do you want to connect with this person?"></textarea>
