@@ -141,4 +141,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   
   // Initial render
   renderConnections();
+
+  // Get current URL button functionality
+  document.getElementById('getCurrentUrl').addEventListener('click', async () => {
+    try {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      if (tab?.url) {
+        urlInput.value = tab.url;
+        reasonInput.focus();
+      }
+    } catch (error) {
+      console.error('Error getting current URL:', error);
+      showFeedback('Failed to get current page URL', true);
+    }
+  });
 }); 

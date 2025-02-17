@@ -60,6 +60,25 @@
       font-size: 0.8em;
       color: #999;
     }
+    .url-input-group {
+      display: flex;
+      gap: 5px;
+      margin: 5px 0;
+    }
+    .url-input-group input {
+      flex: 1;
+    }
+    .url-input-group button {
+      padding: 5px 10px;
+      background: #0077b5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .url-input-group button:hover {
+      background: #005582;
+    }
   </style>
 </head>
 <body>
@@ -68,7 +87,10 @@
     <button id="restoreBtn">Restore Data</button>
   </div>
   <div class="add-connection">
-    <input type="url" id="urlInput" placeholder="Enter URL">
+    <div class="url-input-group">
+      <input type="url" id="urlInput" placeholder="Enter URL">
+      <button id="getCurrentUrl" title="Use current page URL">Use current page URL</button>
+    </div>
     <textarea id="reasonInput" placeholder="Why do you want to connect with this person?"></textarea>
   </div>
   <div id="connectionsList"></div>
