@@ -1,5 +1,5 @@
 Roadmap:
-- Next to the text field for URL for manual input, button to "Add URL of current page"
+- Next to the text field for URL for manual input, button to "Add current page URL"
 - Filtering display of saved/added people.  Filters: "All" "LinkedIn" etc.
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
