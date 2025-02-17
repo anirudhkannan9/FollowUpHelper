@@ -7,24 +7,43 @@ const handleButtonClick = (event) => {
   const button = event.target.closest('button');
   if (!button) return;
   
-  // Debug logging
+  // More detailed debug logging
   console.log('Button clicked:', {
-    text: button.textContent,
+    text: button.textContent?.trim(),
     ariaLabel: button.getAttribute('aria-label'),
-    innerHTML: button.innerHTML
+    className: button.className,
+    parentClassName: button.parentElement?.className,
+    innerHTML: button.innerHTML,
+    parentHTML: button.parentElement?.innerHTML
   });
   
-  const buttonText = button.textContent || '';
+  const buttonText = button.textContent?.trim() || '';
   const ariaLabel = button.getAttribute('aria-label') || '';
   
-  // Check against case-insensitive patterns
-  const patterns = ['Send without note', 'Send now', 'Connect', 'Send'];
+  // Check against case-sensitive patterns
+  const patterns = [
+    'Send without note',
+    'Send now',
+    'Connect',
+    'Send',
+    'Connect without note'
+  ];
+
+  // Also check if this is a connection-related action in a dropdown or modal
+  const isInConnectionContext = 
+    document.querySelector('.artdeco-modal__content')?.contains(button) ||
+    document.querySelector('.artdeco-dropdown__content-inner')?.contains(button) ||
+    document.querySelector('[data-test-modal]')?.contains(button);
+  
   const matches = patterns.some(pattern => 
     buttonText.includes(pattern) || 
-    buttonText.toLowerCase().includes(pattern.toLowerCase()) ||
-    ariaLabel.includes(pattern) ||
-    ariaLabel.toLowerCase().includes(pattern.toLowerCase())
-  );
+    ariaLabel.includes(pattern)
+  ) || (isInConnectionContext && (
+    buttonText.includes('Send') || 
+    ariaLabel.includes('Send') ||
+    buttonText.includes('Connect') || 
+    ariaLabel.includes('Connect')
+  ));
   
   if (matches) {
     console.log('Connection button detected');
