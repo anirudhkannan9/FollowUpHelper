@@ -27,9 +27,11 @@ document.addEventListener('DOMContentLoaded', async () => {
       const { connections = [] } = await chrome.storage.local.get('connections');
       const blob = new Blob([JSON.stringify(connections, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
+      const now = new Date();
+      const dateStr = now.toISOString().replace(/[:.]/g, '-').split('T').join('_');
       const a = document.createElement('a');
       a.href = url;
-      a.download = `connections-backup-${new Date().toISOString().split('T')[0]}.json`;
+      a.download = `FollowUpHelper_Backup_${dateStr}.json`;
       a.click();
       URL.revokeObjectURL(url);
       showFeedback('Backup file downloaded successfully!');
