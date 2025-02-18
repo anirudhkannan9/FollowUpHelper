@@ -1,4 +1,5 @@
 Roadmap:
+- Create a label for the list of saved/added people, so that the screenshot here is clearer: https://anirudhk.gumroad.com/l/coldemailhelper. Right now it's unclear why it goes from "Save this URL/why do you want to connect with this person" to a random person on Twitter
 - Filtering display of saved/added people. Two rows of filters. Row 1 has to do with status: "Sent/Waiting," "Active". Row 2 has to do with platforms: "All" "LinkedIn" etc.
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
