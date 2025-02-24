@@ -3,6 +3,8 @@ Roadmap:
 
 - Save the text that I was typing if I click off the extension for a moment (e.g. to open a new tab)
 
+- Make links in note bodies clickable
+
 - Delete someone from the list by pressing '-' (including a confirmation dialog)
 - Edit the note by clicking a pencil icon
 
