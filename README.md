@@ -14,7 +14,11 @@ Roadmap:
 - Filtering display of saved/added people. Two rows of filters. Row 1 has to do with status: "Sent/Waiting," "Active". Row 2 has to do with platforms: "All" "LinkedIn" etc.
  
 - Add a Loom about how to use this Chrome Extension to this README file. Order of Loom: Use case / why & how I use this (30-60s), then installation instructions.
-- Google Form or something for people to submit suggestions / bugs 
+- Google Form or something for people to submit suggestions / bugs
+
+- Vlad's suggestion: Use AI to help you compose the outreach message based on your saved note.
+
+- Readwise integration. Ideal functionality: let's say you save an article/highlight that mentions that company X was acquired in 2017. If you add someone on LinkedIn and they add you back, the AI model that helps you draft the outreach message to them should be able to tap into Readwise, see this info, and then be able to compose a message that says e.g. "Was just reading about the 2017 acquisition -- super interesting!"
 
 
 Distant roadmap:
