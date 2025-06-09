@@ -1,5 +1,6 @@
 Roadmap:
 - Be able to toggle it on/off easily (so if I'm using Nate's LI account it's off)
+- Safari version
 - Create a label for the list of saved/added people, so that the screenshot here is clearer: https://anirudhk.gumroad.com/l/coldemailhelper. Right now it's unclear why it goes from "Save this URL/why do you want to connect with this person" to a random person on Twitter
 
 - Save the text that I was typing if I click off the extension for a moment (e.g. to open a new tab)
